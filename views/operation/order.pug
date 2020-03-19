@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Order</title>
+    <link rel=”shortcut icon” href=”http://www.google.com/favicon.ico”/>
+    <link rel='stylesheet'type='text/css'href='/stylesheets/operation/order.css'>
+    <link rel="stylesheet" href="http://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.cssntegrity="integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="topnav">
+    <img src="images/台罐.png"/>
+    <a href="/">Home</a>
+    <a href="/order">Order</a>
+    <a href="/schedule">Schedule</a>
+    <a href="/product">Product</a>
+    <a href="/material">Material</a>
+    <a href="/productstock">Product Stock</a>
+    <a href="/materialstock">Material Stock</a>
+    
+</div>
+<h1>訂單</h1>
+<form action="" method ="post">
+    <div class="Data-Content">
+        <div class="Data-Title">
+            <label for="orderid">訂單編號</label><br/>
+            <label for="customerid">客戶ID</label><br/>
+            <label for="customeName">客戶姓名</label><br/>
+            <label for="phonenumber">聯絡電話</label><br/>
+            <label for="productid">產品代號</label><br/>
+            <label for="amount">數量</label><br/>
+            <label for="pay">訂金</label><br/>
+            <label for="deadlineday">期限日</label><br>
+        </div>
+        <div class="Data-Item">
+            <input type="text" id="orderid" name="orderid"><br/>
+            <input type="text" id="customerid" name="customerid"><br/>
+            <input type="text" id="customerName"name="customerName"><br/>
+            <input type="text" id="phonenumber" name="phonenumber"><br/>
+            <input type="text" id="productid" name="productid"><br/>
+            <input type="text" id="amount" name="amount"><br/>
+            <input type="pay" id="pay" name="pay"><br/>
+            <input type="text" id="deadlineday"name="deadlineday"><br/>
+            <input type="submit" value="提交"/>
+        </div>
+       
+    </div>
+    
+</form>
+<script src="javascripts/order.js" type="text/javascript"></script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Customer</title>
+    <link rel=”shortcut icon” href=”http://www.google.com/favicon.ico”/>
+    <link rel='stylesheet'type='text/css'href='/stylesheets/Marketing/customer.css'>
+    <link rel="stylesheet" href="http://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.cssntegrity="integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="topnav">
+    <img src="images/台罐.png"/>
+    <a href="/">Home</a>
+    <a href="/customer">CustomerInfo</a>
+    <a href="/orderpredict">OrderPredict</a>
+    <a href="/customerpredict">CustomerPredict</a>
+</div>
+<h1>顧客資料輸入</h1>
+<form action="" method ="post">
+    <div class="Data-Content">
+        <div class="Data-Title">
+            <label for="customerid">客戶ID</label><br/>
+            <label for="customeName">客戶姓名</label><br/>
+            <label for="lastcost">過去成本</label><br/>
+            <label for="lastprofit">過去收益</label><br/>
+            <label for="lastsales">過去銷量</label><br/>
+            <label for="inputyear">建檔年份</label><br/>
+        </div>
+        <div class="Data-Item">
+            <input type="text" id="customerid" name="customerid"><br/>
+            <input type="text" id="customerName"name="customerName"><br/>
+            <input type="text" id="lastcost" name="lastcost"><br/>
+            <input type="text" id="lastprofit" name="lastprofit"><br/>
+            <input type="text" id="lastsales" name="lastsales"><br/>
+            <input type="text" id="inputyear" name="inputyear"><br/>
+            <input type="submit" value="提交"/>
+        </div>
+       
+    </div>
+    
+</form>
+<script src="javascripts/Marketing/customer.js" type="text/javascript"></script>
+</body>
+</html>

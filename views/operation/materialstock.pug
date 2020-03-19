@@ -1,0 +1,59 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Material Stock</title>
+    <link rel="shortcut icon" href="#" />
+    <link rel='stylesheet'type='text/css'href='/stylesheets/operation/materialstock.css'>
+    <link rel="stylesheet" href="http://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.cssntegrity="integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="topnav">
+    <img src="images/台罐.png"/>
+    <a href="/">Home</a>
+    <a href="/order">Order</a>
+    <a href="/schedule">Schedule</a>
+    <a href="/product">Product</a>
+    <a href="/material">Material</a>
+    <a href="/productstock">Product Stock</a>
+    <a href="/materialstock">Material Stock</a>
+</div>
+<form id="search-material" action="" method="post">
+    <p>
+         <label for ="materialid" class="floatlabel">原料代號</label>
+         <input id="materialid" name="materialid" type="text" required>
+         <input type ="submit" value="搜尋" id="search_materialid">
+    </p>
+</form>
+<h3>目前原料存貨</h3>
+<div class="Material-Searching">
+        <dd class="text-box-title">
+            |原料代號:
+        </dd>
+        <dd class="text-box-content">
+            |#{materialid}
+        </dd>
+        <dd class="text-box-title">
+            |數量：
+        </dd>
+        <dd class="text-box-content">
+            |#{recentmaterial}
+        </dd>
+        <dd class="text-box-title">
+            |最近盤點日:
+        </dd>
+        <dd class="text-box-content">
+            |#{lastcheckday}
+        </dd>
+        <dd class="text-box-title">
+            |上次訂購日：
+        </dd>
+        <dd class="text-box-title">
+            |#{lasttimeorder}
+        </dd>
+</div>
+</body>
+</html>
